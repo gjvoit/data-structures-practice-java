@@ -10,14 +10,33 @@ public class gjvTree {
         root = null;
     }
 
-    // toString defaults to inOrderTraversal
-    // TODO @gjvoit This is broken. Step through it when you get to Cleve.
     public String inOrderTraversal(gjvTreeNode currNode, String result) {
         if (currNode == null) return "";
         else {
-            if (currNode.getLeft() != null) inOrderTraversal(currNode.getLeft(), result);
-            result += currNode.getValue();
-            if (currNode.getRight() != null)  inOrderTraversal(currNode.getRight(), result);
+            if (currNode.getLeft() != null) result = inOrderTraversal(currNode.getLeft(), result);
+            result += "(" + currNode.getValue() + ")" + " --> ";
+            if (currNode.getRight() != null)  result = inOrderTraversal(currNode.getRight(), result);
+        }
+        return result;
+    }
+
+    public String preOrderTraversal(gjvTreeNode currNode, String result) {
+        if (currNode == null) return "";
+        else {
+            result += "(" + currNode.getValue() + ")" + " --> ";
+            if (currNode.getLeft() != null) result = inOrderTraversal(currNode.getLeft(), result);
+            if (currNode.getRight() != null)  result = inOrderTraversal(currNode.getRight(), result);
+        }
+        return result;
+    }
+
+    public String postOrderTraversal(gjvTreeNode currNode, String result) {
+        if (currNode == null) return "";
+        else {
+            if (currNode.getRight() != null)  result = inOrderTraversal(currNode.getRight(), result);
+            if (currNode.getLeft() != null) result = inOrderTraversal(currNode.getLeft(), result);
+            result += "(" + currNode.getValue() + ")" + " --> ";
+
         }
         return result;
     }

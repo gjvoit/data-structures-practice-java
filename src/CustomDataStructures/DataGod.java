@@ -24,9 +24,11 @@ public class DataGod {
         gjvTreeNode myTreeNode3 = new gjvTreeNode(13);
         gjvTreeNode myTreeNode5 = new gjvTreeNode(12);
         gjvTreeNode myTreeNode2 = new gjvTreeNode(11);
+        gjvTreeNode myTreeNode9 = new gjvTreeNode(9);
         myTree.addNode(myTreeNode2, myTree.getRoot());
         myTree.addNode(myTreeNode3, myTree.getRoot());
         myTree.addNode(myTreeNode5, myTree.getRoot());
+        myTree.addNode(myTreeNode9, myTree.getRoot());
         //
         try {
             System.out.println(myTree.searchNode(myTree.getRoot(), 12));
@@ -34,9 +36,11 @@ public class DataGod {
         catch (Exception e) {
             System.out.println("Null value returned from searchNode, value is not in tree.");
         }
-        System.out.println(myTree.searchNode(myTree.getRoot(), 11));
-        System.out.println(myTree.deleteNode(11));
-        System.out.println(myTree.searchNode(myTree.getRoot(), 11));
-//        System.out.println(myTree.inOrderTraversal(myTree.getRoot(), ""));
+//        System.out.println(myTree.searchNode(myTree.getRoot(), 10));
+//        System.out.println(myTree.deleteNode(10));
+//        System.out.println(myTree.getRoot());
+        System.out.println(myTree.preOrderTraversal(myTree.getRoot(), "Pre-order traversal: "));
+        System.out.println(myTree.inOrderTraversal(myTree.getRoot(), "In-order traversal: "));
+        System.out.println(myTree.postOrderTraversal(myTree.getRoot(), "Post-order traversal: "));
     }
 }
