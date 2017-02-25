@@ -10,6 +10,7 @@ public class gjvTree {
         root = null;
     }
 
+    // Left, root, Right
     public String inOrderTraversal(gjvTreeNode currNode, String result) {
         if (currNode == null) return "";
         else {
@@ -20,21 +21,23 @@ public class gjvTree {
         return result;
     }
 
+    // Root (base case), Recurse(left), Recurse(right)
     public String preOrderTraversal(gjvTreeNode currNode, String result) {
         if (currNode == null) return "";
         else {
             result += "(" + currNode.getValue() + ")" + " --> ";
-            if (currNode.getLeft() != null) result = inOrderTraversal(currNode.getLeft(), result);
-            if (currNode.getRight() != null)  result = inOrderTraversal(currNode.getRight(), result);
+            if (currNode.getLeft() != null) result = preOrderTraversal(currNode.getLeft(), result);
+            if (currNode.getRight() != null)  result = preOrderTraversal(currNode.getRight(), result);
         }
         return result;
     }
 
+    // Left, Right, root
     public String postOrderTraversal(gjvTreeNode currNode, String result) {
         if (currNode == null) return "";
         else {
-            if (currNode.getRight() != null)  result = inOrderTraversal(currNode.getRight(), result);
-            if (currNode.getLeft() != null) result = inOrderTraversal(currNode.getLeft(), result);
+            if (currNode.getLeft() != null) result = postOrderTraversal(currNode.getLeft(), result);
+            if (currNode.getRight() != null)  result = postOrderTraversal(currNode.getRight(), result);
             result += "(" + currNode.getValue() + ")" + " --> ";
 
         }
