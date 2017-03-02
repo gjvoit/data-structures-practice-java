@@ -32,7 +32,7 @@ public class gjvStack {
         return size;
     }
 
-    public SinglyLinkedListEntry top() {
+    public SinglyLinkedListEntry peek() {
         return top;
     }
 
@@ -64,8 +64,8 @@ public class gjvStack {
         // At the end, reverse the process
         // Base case 1... current top is the value we're looking for. Return the offset.
         // Base case 2: We've popped the entire stack and haven't found the int, return -1 to indicate this.
-        if (top() == null) return -1;
-        else if (numToFind == top().getValue()) {
+        if (peek() == null) return -1;
+        else if (numToFind == peek().getValue()) {
             return currOffset;
         }
         else {

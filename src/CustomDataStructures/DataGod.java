@@ -52,16 +52,16 @@ public class DataGod {
         }
         System.out.println(myStack.search(8, new gjvStack(), 0));
         for (int i = 9; i > -1; i--) {
-            System.out.println("Top is: " + myStack.top());
-            System.out.println("Top is " + i + ": " + (myStack.top().getValue()==i));
+            System.out.println("Top is: " + myStack.peek());
+            System.out.println("Top is " + i + ": " + (myStack.peek().getValue()==i));
             myStack.pop();
         }
-        System.out.println("Top is: " + myStack.top());
-        System.out.println("Top is " + 30 + ": " + (myStack.top().getValue()==30));
+        System.out.println("Top is: " + myStack.peek());
+        System.out.println("Top is " + 30 + ": " + (myStack.peek().getValue()==30));
         System.out.println(myStack.size());
         myStack.pop();
         System.out.println(myStack.size());
-        System.out.println("Top is null: " + (myStack.top() == null));
+        System.out.println("Top is null: " + (myStack.peek() == null));
         */
     }
 }
