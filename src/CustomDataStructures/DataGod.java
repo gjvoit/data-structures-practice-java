@@ -50,6 +50,7 @@ public class DataGod {
             SinglyLinkedListEntry entry = new SinglyLinkedListEntry(i);
             myStack.push(entry);
         }
+        System.out.println(myStack.search(8, new gjvStack(), 0));
         for (int i = 9; i > -1; i--) {
             System.out.println("Top is: " + myStack.top());
             System.out.println("Top is " + i + ": " + (myStack.top().getValue()==i));
