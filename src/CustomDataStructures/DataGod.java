@@ -2,6 +2,7 @@ package CustomDataStructures;
 
 import CustomDataStructures.LinkedList.SinglyLinkedList;
 import CustomDataStructures.LinkedList.SinglyLinkedListEntry;
+import CustomDataStructures.Queue.gjvQueue;
 import CustomDataStructures.Stack.gjvStack;
 import CustomDataStructures.Tree.gjvTree;
 import CustomDataStructures.Tree.gjvTreeNode;
@@ -62,6 +63,23 @@ public class DataGod {
         myStack.pop();
         System.out.println(myStack.size());
         System.out.println("Top is null: " + (myStack.peek() == null));
+        */
+        /* Queue Tests
+        Integer int1 = 5;
+        gjvQueue myQueue = new gjvQueue(int1);
+        System.out.println("Peek should return 5: " + myQueue.peek());
+        for (int i=0; i < 5; i++) {
+            System.out.println("myQueue.count(): " + myQueue.getCount());
+            Integer nextInt = i;
+            myQueue.enqueue(nextInt);
+            System.out.println("myQueue.peek() should be " + 5 + ": " + myQueue.peek());
+        }
+        System.out.println("myQueue.peek() should be " + 5 + ": " + myQueue.peek());
+        System.out.println("myQueue.dequeue() should return 5: " + myQueue.dequeue());
+        for (int i=0; i < 5; i++) {
+            System.out.println("myQueue.dequeue() should return " + i + ":" + myQueue.dequeue());
+        }
+        System.out.println("myQueue.dequeue() should return null: " + myQueue.dequeue());
         */
     }
 }

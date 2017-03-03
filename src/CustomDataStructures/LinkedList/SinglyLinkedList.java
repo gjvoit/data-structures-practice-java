@@ -171,4 +171,9 @@ public class SinglyLinkedList {
     public void setTail(SinglyLinkedListEntry tail) {
         this.tail = tail;
     }
+
+    // TODO: implement removeTail worst case O(n) runtime.
+    public void removeTail() {
+        return;
+    }
 }
