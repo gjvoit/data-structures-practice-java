@@ -7,7 +7,16 @@ import java.util.Arrays;
  * An ArrayList accesses elements by index and searches using a linear, brute force pattern.
  * Key methods: add, get, remove, size.
  * Dynamic (resizable) array.
- * Doubles in size whenever add is called AND size=capacity.
+ * Java's implementation increases capacity by 50% in size whenever add is called AND size=capacity.
+ * Differences Between Vectors and ArrayLists
+ * Vectors are synchronized, ArrayLists are not.
+ * Data Growth Methods
+ * Use ArrayLists if there is no specific requirement to use Vectors.
+ * Synchronization
+ * If multiple threads access an ArrayList concurrently then we must externally synchronize the block of code which modifies the list either structurally or simply modifies an element. Structural modification means addition or deletion of element(s) from the list. Setting the value of an existing element is not a structural modification.
+ * Collections.synchronizedList is normally used at the time of creation of the list to avoid any accidental unsynchronized access to the list.
+ * Data growth
+ * Internally, both the ArrayList and Vector hold onto their contents using an Array. When an element is inserted into an ArrayList or a Vector, the object will need to expand its internal array if it runs out of room. A Vector defaults to doubling the size of its array, while the ArrayList increases its array size by 50 percent.
  */
 public class ArrayList {
     private static final int DEFAULT_INITIAL_CAPACITY = 10;
@@ -55,6 +64,14 @@ public class ArrayList {
             size--;
             return removedObject;
         } else throw new ArrayIndexOutOfBoundsException();
+    }
+
+    // If found, returns the index of the object, otherwise returns -1
+    public int search(Object o) {
+        for (int i=0;i<size;i++) {
+            if (o == myStore[i]) return i;
+        }
+        return -1;
     }
 
     public boolean removeRange(int beginIndex, int endIndex) {

@@ -77,7 +77,7 @@ public class DataGod {
         }
         System.out.println("myQueue.dequeue() should return null: " + myQueue.dequeue());
         */
-        /* ArrayList Tests */
+        /* ArrayList Tests
         ArrayList myArrayList = new ArrayList();
         for (int i=0; i<12; i++) {
             Integer myInt = i;
@@ -86,14 +86,15 @@ public class DataGod {
             System.out.println("myArrayList.capacity: " + myArrayList.myStore.length);
             System.out.println("Element " + myArrayList.get(i) + " added at index: " + i);
         }
-        /*
         System.out.println(myArrayList);
         for (int i=0; i<12; i++) {
             System.out.println(myArrayList.remove(0));
-        } */
+        }
         System.out.println(myArrayList);
-        System.out.println("myArrayList.removeRange(0,5): " + myArrayList.removeRange(0,11));
+        System.out.println("myArrayList.search(11): " + myArrayList.search(11));
+        System.out.println("myArrayList.removeRange(0,5): " + myArrayList.removeRange(0,5));
         System.out.println(myArrayList);
+        */
         /* Vector Tests */
 
     }
