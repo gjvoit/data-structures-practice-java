@@ -1,11 +1,7 @@
 package CustomDataStructures;
 
-import CustomDataStructures.LinkedList.SinglyLinkedList;
-import CustomDataStructures.LinkedList.SinglyLinkedListEntry;
-import CustomDataStructures.Queue.gjvQueue;
-import CustomDataStructures.Stack.gjvStack;
-import CustomDataStructures.Tree.gjvTree;
-import CustomDataStructures.Tree.gjvTreeNode;
+import CustomDataStructures.*;
+import CustomDataStructures.ArrayList.ArrayList;
 
 /**
  * Created by Garet on 2/19/2017.
@@ -81,6 +77,22 @@ public class DataGod {
         }
         System.out.println("myQueue.dequeue() should return null: " + myQueue.dequeue());
         */
-        /* Heap Tests */
+        /* ArrayList Tests
+        ArrayList myArrayList = new ArrayList();
+        for (int i=0; i<12; i++) {
+            Integer myInt = i;
+            myArrayList.add(i);
+            System.out.println("myArrayList.size(): " + myArrayList.size());
+            System.out.println("myArrayList.capacity: " + myArrayList.myStore.length);
+            System.out.println("Element " + myArrayList.get(i) + " added at index: " + i);
+        }
+        System.out.println(myArrayList);
+        for (int i=0; i<12; i++) {
+            System.out.println(myArrayList.remove(0));
+        }
+        System.out.println(myArrayList);
+        */
+        /* Vector Tests */
+        
     }
 }
