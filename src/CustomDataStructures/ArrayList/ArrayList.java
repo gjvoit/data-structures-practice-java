@@ -57,6 +57,25 @@ public class ArrayList {
         } else throw new ArrayIndexOutOfBoundsException();
     }
 
+    public boolean removeRange(int beginIndex, int endIndex) {
+        if ((0 <= beginIndex && beginIndex < size) && (beginIndex <= endIndex && endIndex < size )) {
+            int iteratingIndex = beginIndex;
+            int numElementsRemoved = endIndex - beginIndex + 1;
+            while (iteratingIndex <= endIndex) {
+                myStore[iteratingIndex] = null;
+                iteratingIndex++;
+            }
+            int i=beginIndex;
+            while  (i < size - numElementsRemoved) {
+                // Shift the array to the left by "difference"
+                myStore[i] = myStore[i+numElementsRemoved];
+                i++;
+            }
+            size -= numElementsRemoved;
+            return true;
+        } else return false;
+    }
+
     @Override
     public String toString() {
         String str = "Current state of ArrayList: ";
