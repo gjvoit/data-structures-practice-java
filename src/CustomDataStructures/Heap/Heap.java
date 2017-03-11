@@ -18,5 +18,21 @@ package CustomDataStructures.Heap;
  * Key methods: add(Object o), clear, contains(Object o), peek, remove(Object o), compare, size
  */
 public class Heap {
+    private int root;
+    private int depth;
+    private int leaves;
+
+    // O(1)
+    // Returns the root node without removing it
+    public int peek() {
+        return root;
+    }
+
+    // O(log(n))
+    // If
+    public boolean add(Object o) {
+        // Base case
+        return false;
+    }
 
 }
