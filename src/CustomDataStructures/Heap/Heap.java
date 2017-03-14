@@ -1,5 +1,10 @@
 package CustomDataStructures.Heap;
 
+import CustomDataStructures.ArrayList.ArrayList;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 /**
  * Created by Garet on 3/2/2017.
  * Specialized tree-based structure.
@@ -18,9 +23,32 @@ package CustomDataStructures.Heap;
  * Key methods: add(Object o), clear, contains(Object o), peek, remove(Object o), compare, size
  */
 public class Heap {
+    private static final int DEFAULT_INITIAL_CAPACITY = 10;
+    private int[] heap;
     private int root;
-    private int depth;
-    private int leaves;
+    private int hole;
+    private int capacity;
+    private int size;
+
+    Heap() {
+        // Add arbitrary value at heap[0], so root sits at heap[1] to allow 2i and 2i + 1 logic to work for adding children
+        heap = new int[DEFAULT_INITIAL_CAPACITY];
+        heap[0] = 99999;
+        hole = 1;
+        size = 1;
+        capacity = DEFAULT_INITIAL_CAPACITY;
+    }
+
+    Heap(int root) {
+        // Add arbitrary root, so root begins at 1
+        heap = new int[DEFAULT_INITIAL_CAPACITY];
+        heap[0] = 99999;
+        this.root = root;
+        heap[1] = this.root;
+        hole = 2;
+        size = 1;
+        capacity = DEFAULT_INITIAL_CAPACITY;
+    }
 
     // O(1)
     // Returns the root node without removing it
@@ -28,10 +56,18 @@ public class Heap {
         return root;
     }
 
-    // O(log(n))
-    // If
-    public boolean add(Object o) {
-        // Base case
+    // Worst case runtime is O(n*log(n)), since array copy requires n operations.
+    // However, amortized runtime for this is O(log(n)), as the amortized insertion time for an array is O(1)
+    // Time Complexity: O(log(n))
+    // Space Complexity: Amortized (O(1)), Worst case (O(2n)) since expanding the array requires holding a new array in memory.
+    public boolean add(int newVal) {
+        if (size == capacity) Arrays.copyOf(heap, heap.length*2);
+        // Add at the "hole" then percolate up.
+        heap[hole] = newVal;
+        hole++;
+        size++;
+        // Max number of times this would get called is log(n) where n is the size of heap;
+        for (int i=0; i < size; )
         return false;
     }
 

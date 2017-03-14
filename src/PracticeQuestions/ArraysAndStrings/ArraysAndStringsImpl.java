@@ -7,6 +7,7 @@ public class ArraysAndStringsImpl {
     public static void main(String[] args) {
         ArraysAndStrings tester = new ArraysAndStrings();
         System.out.println(tester.isUniqueBruteForce(""));
+        System.out.println(tester.isUniqueSpaceOptimized("abcdefghijklmnopqrstuvwxyz1234567890."));
 
     }
 }

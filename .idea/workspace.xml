@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1368b6b1-24bf-4e27-8285-188145efd616" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Hello-World/PracticeQuestions/ArraysAndStrings/ArraysAndStrings.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Hello-World/PracticeQuestions/ArraysAndStrings/ArraysAndStringsImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Hello-World/PracticeQuestions/temp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PracticeQuestions/ArraysAndStrings/ArraysAndStrings.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PracticeQuestions/ArraysAndStrings/ArraysAndStringsImpl.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hello-World/CustomDataStructures/Vector/Vector.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Hello-World/CustomDataStructures/ArrayList/ArrayList.class" afterPath="$PROJECT_DIR$/out/production/Hello-World/CustomDataStructures/ArrayList/ArrayList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Hello-World/CustomDataStructures/DataGod.class" afterPath="$PROJECT_DIR$/out/production/Hello-World/CustomDataStructures/DataGod.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Hello-World/CustomDataStructures/Heap/Heap.class" afterPath="$PROJECT_DIR$/out/production/Hello-World/CustomDataStructures/Heap/Heap.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hello-World/PracticeQuestions/temp.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Hello-World/PracticeQuestions/ArraysAndStrings/ArraysAndStrings.class" afterPath="$PROJECT_DIR$/out/production/Hello-World/PracticeQuestions/ArraysAndStrings/ArraysAndStrings.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Hello-World/PracticeQuestions/ArraysAndStrings/ArraysAndStringsImpl.class" afterPath="$PROJECT_DIR$/out/production/Hello-World/PracticeQuestions/ArraysAndStrings/ArraysAndStringsImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CustomDataStructures/Heap/Heap.java" afterPath="$PROJECT_DIR$/src/CustomDataStructures/Heap/Heap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PracticeQuestions/ArraysAndStrings/ArraysAndStrings.java" afterPath="$PROJECT_DIR$/src/PracticeQuestions/ArraysAndStrings/ArraysAndStrings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PracticeQuestions/ArraysAndStrings/ArraysAndStringsImpl.java" afterPath="$PROJECT_DIR$/src/PracticeQuestions/ArraysAndStrings/ArraysAndStringsImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,24 +28,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DataGod.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/DataGod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2112">
-              <caret line="96" column="10" lean-forward="false" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/ArrayList/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
-              <folding />
+            <state relative-caret-position="194">
+              <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="31" />
+              <folding>
+                <element signature="e#1627#1628#0" expanded="true" />
+                <element signature="e#1689#1690#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,11 +44,23 @@
       <file leaf-file-name="Heap.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/Heap/Heap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="291">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
-                <element signature="e#1179#1180#0" expanded="true" />
-                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gjvTree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/Tree/gjvTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-281">
+              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <folding>
+                <element signature="e#153#154#0" expanded="true" />
+                <element signature="e#180#181#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,6 +79,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>size</find>
+      <find>copyof</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,9 +118,9 @@
         <option value="$PROJECT_DIR$/src/CustomDataStructures/Vector/Vector.java" />
         <option value="$PROJECT_DIR$/src/CustomDataStructures/ArrayList/ArrayList.java" />
         <option value="$PROJECT_DIR$/src/CustomDataStructures/Heap/HeapNode.java" />
-        <option value="$PROJECT_DIR$/src/CustomDataStructures/Heap/Heap.java" />
-        <option value="$PROJECT_DIR$/src/PracticeQuestions/ArraysAndStrings/ArraysAndStrings.java" />
         <option value="$PROJECT_DIR$/src/PracticeQuestions/ArraysAndStrings/ArraysAndStringsImpl.java" />
+        <option value="$PROJECT_DIR$/src/PracticeQuestions/ArraysAndStrings/ArraysAndStrings.java" />
+        <option value="$PROJECT_DIR$/src/CustomDataStructures/Heap/Heap.java" />
       </list>
     </option>
   </component>
@@ -217,6 +218,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CustomDataStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures-practice-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures-practice-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CustomDataStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures-practice-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures-practice-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CustomDataStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Heap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures-practice-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures-practice-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CustomDataStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArrayList" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -569,7 +636,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2437972" sideWeight="0.51145834" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24366042" sideWeight="0.48854166" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24366042" sideWeight="0.48854166" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -611,7 +678,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
-          <folding />
+          <folding>
+            <element signature="e#1627#1628#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -620,8 +690,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1179#1180#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1984#1985#0" expanded="false" />
+            <element signature="e#2011#2012#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -631,7 +701,7 @@
         <state relative-caret-position="2090">
           <caret line="96" column="10" lean-forward="false" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -640,7 +710,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
-          <folding />
+          <folding>
+            <element signature="e#1627#1628#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -649,8 +722,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1179#1180#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1984#1985#0" expanded="false" />
+            <element signature="e#2011#2012#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -674,7 +747,7 @@
         <state relative-caret-position="792">
           <caret line="39" column="74" lean-forward="false" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -698,7 +771,7 @@
         <state relative-caret-position="572">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -854,36 +927,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/Vector/Vector.java" />
-    <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/ArrayList/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/Heap/HeapNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/DataGod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2112">
-          <caret line="96" column="10" lean-forward="false" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/Tree/gjvTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -896,29 +943,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/DataGod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="96" column="10" lean-forward="false" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PracticeQuestions/ArraysAndStrings/ArraysAndStringsImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="58" lean-forward="false" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        <state relative-caret-position="132">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PracticeQuestions/ArraysAndStrings/ArraysAndStrings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="577">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/Tree/gjvTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/ArrayList/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="31" />
+          <folding>
+            <element signature="e#1627#1628#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CustomDataStructures/Heap/Heap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="291">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
-            <element signature="e#1179#1180#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
