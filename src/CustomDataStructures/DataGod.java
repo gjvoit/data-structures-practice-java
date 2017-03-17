@@ -2,6 +2,7 @@ package CustomDataStructures;
 
 import CustomDataStructures.*;
 import CustomDataStructures.ArrayList.ArrayList;
+import CustomDataStructures.Heap.Heap;
 
 /**
  * Created by Garet on 2/19/2017.
@@ -95,7 +96,42 @@ public class DataGod {
         System.out.println("myArrayList.removeRange(0,5): " + myArrayList.removeRange(0,5));
         System.out.println(myArrayList);
         */
-        /* Vector Tests */
-
+        /* Heap Tests
+        Heap myHeap = new Heap(10);
+        System.out.println("myHeap root: " + myHeap.peek());
+        myHeap.enqueue(11);
+        myHeap.enqueue(6);
+        myHeap.enqueue(5);
+        myHeap.enqueue(7);
+        myHeap.enqueue(4);
+        System.out.println("myHeap root: " + myHeap.peek());
+        System.out.println("myHeap.left[1]: " + myHeap.getLeft(1));
+        System.out.println("myHeap.left[3]: " + myHeap.getLeft(3));
+        System.out.println("myHeap.right[1]: " + myHeap.getRight(1));
+        System.out.println("myHeap.left[2]: " + myHeap.getLeft(2));
+        try {
+            System.out.println("myHeap.left[2]: " + myHeap.getLeft(6));
+        } catch(Exception e) {
+            System.out.println(e);
+        }
+        System.out.println("myHeap.parent[3]: " + myHeap.getParent(3));
+        System.out.println("myHeap.parent[4]: " + myHeap.getParent(4));
+        System.out.println("myHeap.parent[5]: " + myHeap.getParent(5));
+        System.out.println(myHeap);
+        System.out.println(myHeap.dequeue());
+        myHeap.enqueue(4);
+        System.out.println(myHeap);
+        System.out.println(myHeap.dequeue());
+        System.out.println(myHeap);
+        System.out.println(myHeap.dequeue());
+        System.out.println(myHeap);
+        System.out.println(myHeap.dequeue());
+        myHeap.enqueue(4);
+        System.out.println(myHeap);
+        System.out.println(myHeap.dequeue());
+        System.out.println(myHeap);
+        System.out.println(myHeap.dequeue());
+        System.out.println(myHeap);
+        */
     }
 }
