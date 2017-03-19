@@ -47,4 +47,32 @@ public class ArraysAndStrings {
         return true;
     }
 
+    /* 1.3
+     * URLify
+     * Given a char[] with " ", return char[] that replaces all " " with %20
+     * Space Complexity: O(1)
+     * Time Complexity: O(2n)
+     * Code complexity could be reduced to O(n) if allowed to use a second char[]
+     */
+    public char[] URLify(char[] input, int length) {
+        int numSpaces = 0;
+        for (int i=0; i<length-1; i++) {
+            if (input[i] == ' ') numSpaces++;
+        }
+        int insertIndex = length + numSpaces*2 - 1;
+        for (int j=length-1; j > 0; j--) {
+            if (input[j] == ' ') {
+                input[insertIndex] = '0';
+                input[insertIndex-1] = '2';
+                input[insertIndex-2] = '%';
+                insertIndex-=3;
+            }
+            else {
+                input[insertIndex] = input[j];
+                insertIndex-=1;
+            }
+        }
+        return input;
+    }
+
 }

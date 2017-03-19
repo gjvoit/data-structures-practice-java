@@ -44,8 +44,21 @@ public class Heap {
         heap[0] = -9999999;
         heap[1] = root;
         hole = 2;
-        size = 1;
+        size = 2;
         capacity = DEFAULT_INITIAL_CAPACITY;
+    }
+
+    /* Space Complexity: O(1)
+     * Time Complexity: O(n)
+     * Because the array isn't sorted and isn't a binary search tree, we cannot use binary search to reduce to O(log(n))?
+     * Linearly search through the array until we find the value we're looking for
+     * Return the index at which we found the value, or -1 if the value wasn't found
+     */
+    public int get(int searchVal) {
+        for (int i=1; i < hole; i++) {
+            if (heap[i] == searchVal) return i;
+        }
+        return -1;
     }
 
     public int getLeft(int index) {
@@ -65,7 +78,7 @@ public class Heap {
 
     public String toString() {
         String str = "";
-        for (int i=1; i < capacity; i++) str += "[" + heap[i] + "] ";
+        for (int i=1; i < capacity; i++) str += i + ":[" + heap[i] + "] ";
         return str;
     }
 
@@ -84,18 +97,14 @@ public class Heap {
     // Time Complexity: O(log(n))
     // Space Complexity: Amortized (O(1)), Worst case (O(2n)) since expanding the array requires holding a new array in memory.
     public void enqueue(int newVal) {
-        if (size == capacity) Arrays.copyOf(heap, heap.length*2);
+        if (size == capacity) {
+            heap = Arrays.copyOf(heap, heap.length*2);
+            capacity = heap.length;
+        }
         // Add at the "hole" then percolate up.
         heap[hole] = newVal;
         // Max number of times this would get called is log(n) where n is the size of heap;
-        int currentLocation = hole;
-        // Percolate up until the heap[currLocation] is not less than its parent
-        while (heap[currentLocation] < heap[Math.floorDiv(currentLocation, 2)]) {
-            int tempParent = heap[Math.floorDiv(currentLocation, 2)];
-            heap[Math.floorDiv(currentLocation, 2)] = heap[currentLocation];
-            heap[currentLocation] = tempParent;
-            currentLocation = Math.floorDiv(currentLocation, 2);
-        }
+        percolateUp(hole);
         hole++;
         size++;
     }
@@ -103,30 +112,61 @@ public class Heap {
     public int dequeue() {
         int dequeueVal = heap[1];
         // Move rightmost leaf to root
-        heap[1] = heap[size];
+        heap[1] = heap[size-1];
         // Percolate down while currVal > min(left, right)
         percolateDown(1);
+        heap[size-1] = 0;
         hole--;
         size--;
         return dequeueVal;
     }
 
+    public void increasePriority(int task, int newPriority) {
+        int indexOfTask = get(task);
+        heap[indexOfTask] = newPriority;
+        percolateUp(indexOfTask);
+    }
+
+    public void decreasePriority(int task, int newPriority) {
+        int indexOfTask = get(task);
+        heap[indexOfTask] = newPriority;
+        percolateDown(indexOfTask);
+    }
+
+    private void percolateUp(int index) {
+        int currentLocation = index;
+        // Percolate up until the heap[currLocation] is not less than its parent
+        while (heap[currentLocation] < heap[Math.floorDiv(currentLocation, 2)]) {
+            int tempParent = heap[Math.floorDiv(currentLocation, 2)];
+            heap[Math.floorDiv(currentLocation, 2)] = heap[currentLocation];
+            heap[currentLocation] = tempParent;
+            currentLocation = Math.floorDiv(currentLocation, 2);
+        }
+    }
+
     private void percolateDown(int index) {
         // Percolate down
-        int currentLocation = 1;
+        int currentLocation = index;
         int tempSwap;
         int minIndex;
-//        System.out.println(size);
-        while (heap[currentLocation] > Math.min(heap[currentLocation*2], heap[currentLocation*2+1])
-                && Math.min(heap[currentLocation*2], heap[currentLocation*2+1]) != 0) {
+        while (currentLocation*2+1 <= hole &&
+                heap[currentLocation] > Math.min(heap[currentLocation*2], heap[currentLocation*2+1])) {
+            if (heap[currentLocation*2] == 0 && heap[currentLocation*2+1] == 0) break;
             // Temporarily hold current value (being percolated down) to enable the swap
             tempSwap = heap[currentLocation];
-            if (heap[currentLocation*2] < heap[currentLocation*2+1]) minIndex = currentLocation*2;
+            // Logic here is kind of spotty.
+            // Any 0 values represent "null" and should not be considered when checking the min
+            // Therefore calculating min(0,x [ for any x > 0]) will return 0, which results in unintended swaps
+            if (getLeft(currentLocation) < getRight(currentLocation)) {
+                if (getLeft(currentLocation) == 0) minIndex = currentLocation*2+1;
+                else minIndex = currentLocation*2;
+            }
+            else if (getRight(currentLocation) == 0) minIndex = currentLocation*2;
             else minIndex = currentLocation*2+1;
             heap[currentLocation] = heap[minIndex];
             heap[minIndex] = tempSwap;
+            currentLocation = minIndex;
         }
-        heap[size] = 0;
     }
 
     public int remove(int deleteValue) {

@@ -100,38 +100,31 @@ public class DataGod {
         Heap myHeap = new Heap(10);
         System.out.println("myHeap root: " + myHeap.peek());
         myHeap.enqueue(11);
+        System.out.println(myHeap.get(11));
         myHeap.enqueue(6);
         myHeap.enqueue(5);
         myHeap.enqueue(7);
         myHeap.enqueue(4);
-        System.out.println("myHeap root: " + myHeap.peek());
-        System.out.println("myHeap.left[1]: " + myHeap.getLeft(1));
-        System.out.println("myHeap.left[3]: " + myHeap.getLeft(3));
-        System.out.println("myHeap.right[1]: " + myHeap.getRight(1));
-        System.out.println("myHeap.left[2]: " + myHeap.getLeft(2));
-        try {
-            System.out.println("myHeap.left[2]: " + myHeap.getLeft(6));
-        } catch(Exception e) {
-            System.out.println(e);
-        }
-        System.out.println("myHeap.parent[3]: " + myHeap.getParent(3));
-        System.out.println("myHeap.parent[4]: " + myHeap.getParent(4));
-        System.out.println("myHeap.parent[5]: " + myHeap.getParent(5));
         System.out.println(myHeap);
-        System.out.println(myHeap.dequeue());
-        myHeap.enqueue(4);
+        myHeap.increasePriority(10, 3);
         System.out.println(myHeap);
-        System.out.println(myHeap.dequeue());
+        myHeap.decreasePriority(3, 10);
         System.out.println(myHeap);
-        System.out.println(myHeap.dequeue());
+        myHeap.enqueue(12);
+        myHeap.enqueue(13);
+        myHeap.enqueue(14);
         System.out.println(myHeap);
-        System.out.println(myHeap.dequeue());
-        myHeap.enqueue(4);
+        myHeap.increasePriority(14,2);
         System.out.println(myHeap);
-        System.out.println(myHeap.dequeue());
+        myHeap.enqueue(15);
+        myHeap.dequeue();
+        System.out.println(myHeap);
+        myHeap.decreasePriority(6, 9);
+        System.out.println(myHeap);
         System.out.println(myHeap);
         System.out.println(myHeap.dequeue());
         System.out.println(myHeap);
         */
+        /* Hash Table Tests */
     }
 }
