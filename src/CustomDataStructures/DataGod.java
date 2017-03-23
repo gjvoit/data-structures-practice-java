@@ -2,6 +2,7 @@ package CustomDataStructures;
 
 import CustomDataStructures.*;
 import CustomDataStructures.ArrayList.ArrayList;
+import CustomDataStructures.HashTable.*;
 import CustomDataStructures.Heap.Heap;
 
 /**
@@ -126,5 +127,42 @@ public class DataGod {
         System.out.println(myHeap);
         */
         /* Hash Table Tests */
+        HashTable myHashTable = new HashTable();
+        HashNode january = new HashNode(1, "January");
+        HashNode february = new HashNode(2, "February");
+        HashNode march = new HashNode(3, "March");
+        HashNode june = new HashNode(6, "June");
+        HashNode april = new HashNode(4, "April");
+        HashNode may = new HashNode(5, "May");
+        HashNode october = new HashNode(10, "October");
+        HashNode december = new HashNode(12, "December");
+        HashNode july = new HashNode(7, "July");
+        HashNode august = new HashNode(8, "August");
+        HashNode september = new HashNode(9, "September");
+        HashNode november = new HashNode(11, "November");
+
+        myHashTable.put(january);
+        myHashTable.put(october);
+        myHashTable.put(march);
+        myHashTable.put(february);
+        myHashTable.put(april);
+        myHashTable.put(august);
+        myHashTable.put(june);
+        myHashTable.put(july);
+        myHashTable.put(september);
+        myHashTable.put(november);
+        myHashTable.put(december);
+        myHashTable.put(may);
+
+//        System.out.println(myHashTable);
+        String hashOutput = "hashOutput after add, before remove:\n";
+        for (int i=1;i<13; i++) {
+            hashOutput += "[" + i + "]: " + myHashTable.get(i).getValue() + " ";
+        }
+        System.out.println(myHashTable);
+        for (int j=1; j<13; j++) {
+            myHashTable.remove(j);
+        }
+        System.out.println(myHashTable);
     }
 }
