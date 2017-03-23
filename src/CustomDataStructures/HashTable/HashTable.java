@@ -42,12 +42,26 @@ public class HashTable {
 
     public int getSize() { return size; }
 
+    /**
+     *
+     * @param objectToInsert The object to add to the associated LinkedList.
+     * Time Complexity: O(1)
+     * Space Complexity: O(1)
+     */
     public void put(HashNode objectToInsert) {
         int hash = objectToInsert.getKey() % 10;
         size++;
         map.get(hash).addLast(objectToInsert);
     }
 
+    /**
+     *
+     * @param keyToGet Key to compare to while iterating through the associated LinkedList.
+     * @return HashNode
+     * Worst case Time Complexity: O(n), as all items could collide on a single hash value, resulting in the worst case runtime of a LinkedList.
+     * Average Time Complexity: O(1)
+     * Space Complexity: O(1)
+     */
     public HashNode get(int keyToGet) {
         int hash = keyToGet % 10;
         HashNode curr = null;
@@ -58,6 +72,15 @@ public class HashTable {
         return curr;
     }
 
+    /**
+     *
+     * @param keyToRemove Key to compare to while iterating through the associated LinkedList.
+     * My worst case runtime is O(3n), due to my LinkedList implementation and my lack of proper implementation of .equals for HashNodes.
+     * However, Time Complexity still reduces to O(n).
+     * This could be improved upon by a factor of 3, but I will leave it as is for now, as I have achieved my goal of
+     * refreshing my memory on Hash Maps (Hash Tables).
+     * Space Complexity: O(1)
+     */
     public boolean remove(Integer keyToRemove) {
         int hash = keyToRemove % 10;
         if (map.get(hash) == null) return false;
