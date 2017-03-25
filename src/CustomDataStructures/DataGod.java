@@ -126,7 +126,7 @@ public class DataGod {
         System.out.println(myHeap.dequeue());
         System.out.println(myHeap);
         */
-        /* Hash Table Tests */
+        /* Hash Table Tests
         HashTable myHashTable = new HashTable();
         HashNode january = new HashNode(1, "January");
         HashNode february = new HashNode(2, "February");
@@ -154,15 +154,13 @@ public class DataGod {
         myHashTable.put(december);
         myHashTable.put(may);
 
-//        System.out.println(myHashTable);
-        String hashOutput = "hashOutput after add, before remove:\n";
-        for (int i=1;i<13; i++) {
-            hashOutput += "[" + i + "]: " + myHashTable.get(i).getValue() + " ";
-        }
         System.out.println(myHashTable);
         for (int j=1; j<13; j++) {
             myHashTable.remove(j);
         }
         System.out.println(myHashTable);
+        */
+        int x = 7/2;
+        System.out.println(x);
     }
 }
