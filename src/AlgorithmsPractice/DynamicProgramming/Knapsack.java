@@ -1,4 +1,4 @@
-package AlgorithmsPractice.Knapsack;
+package AlgorithmsPractice.DynamicProgramming;
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -9,7 +9,7 @@ import java.io.*;
 public class Knapsack {
 
     public static void main (String[] args) throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File("./src/AlgorithmsPractice/Knapsack/input.txt"));
+        Scanner scanner = new Scanner(new File("./src/AlgorithmsPractice/DynamicProgramming/input.txt"));
         int numTests = Integer.parseInt(scanner.nextLine()); // Scans the next token of the input as an int.
         System.out.println(numTests);
         for (int i = 0; i < numTests; i++) {
