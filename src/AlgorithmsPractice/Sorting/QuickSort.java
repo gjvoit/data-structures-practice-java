@@ -35,13 +35,13 @@ public class QuickSort  {
 
         // Divide into two lists
         while (i <= j) {
-            // If the current value from the left list is smaller than the pivot
-            // element then get the next element from the left list
+            // If the current value from the left list is smaller than the pivot element
+            // then skip this element and evaluate the next element from the left list
             while (numbers[i] < pivot) {
                 i++;
             }
-            // If the current value from the right list is larger than the pivot
-            // element then get the next element from the right list
+            // If the current value from the right list is larger than the pivot element
+            // then skip this element and evaluate the next element from the right list
             while (numbers[j] > pivot) {
                 j--;
             }
@@ -50,7 +50,7 @@ public class QuickSort  {
             // the pivot element and if we have found a value in the right list
             // which is smaller than the pivot element then we exchange the
             // values.
-            // As we are done we can increase i and j
+            // As we are done we can shift i and j in their respective directions
             if (i <= j) {
                 exchange(i, j);
                 i++;
