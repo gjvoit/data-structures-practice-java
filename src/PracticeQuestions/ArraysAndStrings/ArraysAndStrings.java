@@ -1,7 +1,6 @@
 package PracticeQuestions.ArraysAndStrings;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * Created by Garet on 3/11/2017.
@@ -44,6 +43,14 @@ public class ArraysAndStrings {
      */
     public boolean checkPermutation(String a, String b) {
         // Java doesn't have a default sort method for String... rude.
+        if (a.length() != b.length()) return false;
+        char[] aChars = a.toCharArray();
+        char[] bChars = b.toCharArray();
+        Arrays.sort(aChars);
+        Arrays.sort(bChars);
+        for (int i=0; i < a.length(); i++) {
+            if (aChars[i] != bChars[i]) return false;
+        }
         return true;
     }
 
@@ -75,4 +82,35 @@ public class ArraysAndStrings {
         return input;
     }
 
+    /**
+     * Runtime is O(n) where n is the length of checkString.
+     * @param checkString
+     * @return
+     */
+    public boolean containsPalindromePermutation(String checkString) {
+        char[] chars  = checkString.toCharArray();
+        int i;
+        int countParities = 0;
+        HashMap<Character, Integer> checkParities = new HashMap<Character, Integer>(52);
+//        Iterator iter = checkParities.entrySet().iterator();
+        System.out.println("checkParities.get\'a\': " + checkParities.get('a'));
+
+        for (i=0; i < chars.length; i++) {
+            if (checkParities.get(chars[i]) == null) checkParities.put(chars[i], 0);
+            checkParities.put(chars[i], checkParities.get(chars[i]) + 1);
+        }
+        System.out.println("checkParities.get\'a\': " + checkParities.get('a'));
+        System.out.println("checkParities.get\'b\': " + checkParities.get('b'));
+        Iterator iter = checkParities.values().iterator();
+        while (iter.hasNext()) {
+            if ((Integer) iter.next() % 2 != 0) countParities += 1;
+            if (countParities > 1) return false;
+        }
+// Alternative way to iterate over a Collection without explicitly instantiating an Iterator
+//        for (Integer index : checkParities.values()) {
+//            if (index % 2 != 0) countParities += 1;
+//            else if (countParities > 1) return false;
+//        }
+        return true;
+    }
 }
