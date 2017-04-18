@@ -16,6 +16,8 @@ public class ArraysAndStringsImpl {
         String b = "aabbde";
 //        System.out.println(tester.checkPermutation(a, b));
         System.out.println(tester.containsPalindromePermutation(b));
+        int[] costsA = {9, 5, 2, 5, 1, 10, 8};
+        System.out.println(tester.calculateMaxProfit(costsA));
 
     }
 }

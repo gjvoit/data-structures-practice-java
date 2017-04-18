@@ -113,4 +113,14 @@ public class ArraysAndStrings {
 //        }
         return true;
     }
+
+    int calculateMaxProfit(int[] costs) {
+        int localMin = costs[0];
+        int maxProfit = 0;
+        for (int i=0; i < costs.length; i++) {
+            localMin = Math.min(localMin, costs[i]);
+            maxProfit = Math.max(maxProfit, costs[i] - localMin);
+        }
+        return maxProfit;
+    }
 }
