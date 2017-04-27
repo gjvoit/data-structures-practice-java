@@ -35,8 +35,6 @@ public class MergeSort
             mergeSort(a, tmp, left, center);
             mergeSort(a, tmp, center + 1, right);
             merge(a, tmp, left, center + 1, right);
-            System.out.println(Arrays.toString(tmp));
-            System.out.println(Arrays.toString(a));
         }
     }
 

@@ -1,6 +1,8 @@
 package PracticeQuestions;
 
-import java.util.Arrays;
+import CustomDataStructures.HashTable.HashTable;
+
+import java.util.*;
 
 /**
  * Created by Garet on 4/14/2017.
@@ -8,10 +10,12 @@ import java.util.Arrays;
 public class Playground {
     public static void main(String[] args) {
         Playground pg = new Playground();
-        int[] unsorted = {3, 1, 0, 4};
-        System.out.println(Arrays.toString(unsorted));
-        pg.quickSort(unsorted);
-        System.out.println(Arrays.toString(unsorted));
+        HashSet<Integer> hs = new HashSet<Integer>();
+        hs.add(5);
+        Hashtable<String, Integer> ht = new Hashtable<String, Integer>();
+        ht.keySet();
+        ht.values();
+        ht.entrySet();
     }
 
     void quickSort(int[] arr) {
